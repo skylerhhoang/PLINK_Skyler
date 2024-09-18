@@ -50,21 +50,21 @@ bash
 plink --bfile qc4 --logistic --covar pca_results.eigenvec --covar-number 1-10 --out association_results
 This will perform a logistic regression with the first 10 principal components as covariates.
 
-#Step 6: Visualize results (Manhattan plot and QQ plot)
+# Step 6: Visualize results (Manhattan plot and QQ plot)
 After the association analysis, it's helpful to visualize the results. You can use the following R script to create Manhattan and QQ plots:
 
 Manhattan Plot (R)
 r
 library(qqman)
 
-# Load results
+## Load results
 assoc <- read.table("association_results.assoc.logistic", header=TRUE)
 
-# Manhattan plot
+## Manhattan plot
 manhattan(assoc, chr="CHR", bp="BP", snp="SNP", p="P", main="Manhattan Plot", ylim=c(0, 10))
 QQ Plot (R)
 r
 library(qqman)
 
-# QQ plot
+## QQ plot
 qq(assoc$P, main="QQ Plot of Association P-values")
