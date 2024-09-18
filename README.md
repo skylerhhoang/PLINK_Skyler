@@ -39,7 +39,7 @@ bash
 ```
 plink --bfile qc2 --hwe 1e-6 --make-bed --out qc3
 ```
-This excludes SNPs that deviate from HWE (in controls only).
+This excludes SNPs that deviate from HWE, in controls only assuming that we have defined case/control in Phenotype column of the fam file.
 
 ## Sample missingness:
 bash
