@@ -69,7 +69,6 @@ This will perform a logistic regression with the first 10 principal components a
 # Step 6: Visualize results (Manhattan plot and QQ plot)
 After the association analysis, it's helpful to visualize the results. You can use the following R script to create Manhattan and QQ plots:
 
-Manhattan Plot (R)
 r
 ```
 library(qqman)
