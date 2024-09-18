@@ -22,7 +22,9 @@ Before performing an association analysis, it's essential to clean your data thr
 
 ## Missing genotype rate:
 bash
+```
 plink --bfile merged_data --geno 0.05 --make-bed --out qc1
+```
 This excludes SNPs with a missing genotype rate > 5%.
 
 ## Minor Allele Frequency (MAF):
