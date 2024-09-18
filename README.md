@@ -81,6 +81,7 @@ assoc <- read.table("association_results.assoc.logistic", header=TRUE)
 ```
 
 ## Manhattan plot
+
 ```
 manhattan(assoc, chr="CHR", bp="BP", snp="SNP", p="P", main="Manhattan Plot", ylim=c(0, 10))
 QQ Plot (R)
